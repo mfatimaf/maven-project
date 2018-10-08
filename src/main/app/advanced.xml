@@ -22,6 +22,6 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
         <db:select config-ref="Derby_Configuration" doc:name="Database">
             <db:parameterized-query><![CDATA[Select * from FLIGHTS]]></db:parameterized-query>
         </db:select>
-        <object-to-string-transformer doc:name="Object to String"/>
+        <object-to-string-transformer doc:name="Object to JSON"/>
     </flow>
 </mule>
